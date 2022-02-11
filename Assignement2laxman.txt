@@ -1,0 +1,68 @@
+1
+var str : String = "https://www.Google.com"
+var res : String = str.reverse.toUpperCase()
+
+2.
+val donutJson = s"""{ "donut_name" : "$donut_name","quantity_purchased":"$quantity_purchased","price":"$price"}""".stripMargin
+val donutJson : String = "{"donut_name":"vanilla Donut","quanity_purchased":"10","price":2.5}"
+
+3.
+import scala.io.StdIn._
+    val name = readLine("Enter your name: ")
+    println("Enter your age: ")
+    val age = readInt()
+    println(Console.BOLD)
+    print("Name: ")
+    print(Console.UNDERLINED)
+    print(name)
+    println(Console.BOLD)
+    print("Age: ")
+    print(Console.RESET)
+    print(age)
+
+
+4.
+var str : String = "https://www.Google.com"
+println(str.charAt(7))
+
+5.
+val glazedDonut = "Glazed Donut"
+val unitPrice = 2.50
+val qtyPurchased = 10
+val totalCost = qtyPurchased * unitPrice
+println(f"""Total cost of $qtyPurchased $glazedDonut${if (qtyPurchased > 1) "s" else ""} = $$$totalCost%1.2f""")
+
+6.
+object quesTwo {
+  def main(args: Array[String]): Unit = {
+      val list = List("A","BB","CCC","DDDD","EEEEE")
+
+    var count:Int = 0
+    for(i <- list)
+      {
+        var a:String = i
+        for( a <- 1 to a.length() ){
+          count=count+1;
+        }
+        println(i+"-"+count)
+        count=0;
+      }
+  }
+}
+
+7.
+import scala.collection.mutable.ListBuffer
+
+class ll{
+	var lst = ListBuffer[Int]()
+	
+	def main(args : Array[String]) : Unit = {
+		var n : Int = 100;
+		
+		while(n != 150){
+			lst += n
+			n += 10
+		}
+	}
+	println(lst)
+}
